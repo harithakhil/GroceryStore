@@ -1,10 +1,13 @@
 package elementRepository;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.ExcelRead;
 import utilities.GeneralUtilities;
 
 public class LoginPage {
@@ -12,6 +15,7 @@ public class LoginPage {
 	WebDriver driver;
 	
 	GeneralUtilities gu=new GeneralUtilities();
+	ExcelRead eu;
 
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
@@ -65,6 +69,18 @@ public class LoginPage {
 		getUserName("admin");
 		getPassWord("admin");
 		clickSignin();
+	}
+	
+	public List<String> getLoginDetails() {
+		eu=new ExcelRead();
+		List<String>excelList=eu.readDataFromExcel("Sheet1");
+		return excelList;
+	}
+	
+	public void loginCredentials(String user,String pass) {
+		gu.sendText(userName, user);
+		gu.sendText(password, pass);
+		gu.clickOnElement(signin);
 	}
 	
 

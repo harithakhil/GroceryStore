@@ -3,9 +3,9 @@
 <test name="MyFirstTest">
 <parameter name="Browser" value="chrome"></parameter>
 <classes>
-<class name="testCases.ManageProductTestCase">
+<class name="testCases.LoginTestCase">
 <methods>
-<include name="verifyImageUpload"></include>
+<include name="excelRead"></include>
 </methods>
 </class >
 </classes>

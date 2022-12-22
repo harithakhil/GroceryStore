@@ -1,5 +1,7 @@
 package testCases;
 
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -10,7 +12,7 @@ import elementRepository.LoginPage;
 public class LoginTestCase extends BaseClass {
   
 	LoginPage lp;
-	
+	List<String>loginList;
 	@Test
 	public void verifyLoggedUser() {
 		lp=new LoginPage(driver);
@@ -61,5 +63,16 @@ public class LoginTestCase extends BaseClass {
 			{ "admin", "admin" }, { "admin5", "admin" }, { "admin", "admin4" }, {"admin1", "admin2"}, };
 
 		}
+	
+	@Test
+	public void excelRead() {
+		lp=new LoginPage(driver);
+		loginList=lp.getLoginDetails();
+		System.out.println(loginList);
+		lp.loginCredentials(loginList.get(0), loginList.get(1));
+	}
+	
+	
+	
 		
 }
