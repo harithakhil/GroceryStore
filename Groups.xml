@@ -1,0 +1,16 @@
+<suite name="MyFirstTest">
+<test name="MyTestName">
+<parameter name="Browser" value="chrome">
+</parameter>
+<groups>
+<run>
+<include name="SmokeTest">
+</include>
+</run>
+</groups>
+<classes>
+<class name="testCases.ManageOrdersTestCase"/>
+<class name="testCases.ManageDeliveryBoyTestCase"/>
+</classes>
+</test>
+</suite>

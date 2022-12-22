@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel Testing]">
+  <test thread-count="5" parallel="methods" name="MyFirstTest(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="testCases.ManageProductTestCase">
+        <methods>
+          <include name="verifyImageUpload"/>
+          <include name="afterMethod"/>
+          <include name="verifyVegIsSelectedInProductType"/>
+          <include name="beforeMethod"/>
+          <include name="verifyYesIsSelectedInStock"/>
+          <include name="verifyAddNewProduct"/>
+        </methods>
+      </class> <!-- testCases.ManageProductTestCase -->
+    </classes>
+  </test> <!-- MyFirstTest(failed) -->
+</suite> <!-- Failed suite [Parallel Testing] -->
