@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-22T19:43:01 IST" name="TestRunnerSuite" finished-at="2022-12-22T19:43:06 IST" duration-ms="4472">
+  <suite started-at="2022-12-27T10:47:47 IST" name="TestRunnerSuite" finished-at="2022-12-27T10:47:54 IST" duration-ms="7348">
     <groups>
     </groups>
-    <test started-at="2022-12-22T19:43:01 IST" name="MyFirstTest" finished-at="2022-12-22T19:43:06 IST" duration-ms="4472">
-      <class name="testCases.LoginTestCase">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.LoginTestCase@35e2d654]" started-at="2022-12-22T19:43:01 IST" name="beforeMethod" finished-at="2022-12-22T19:43:04 IST" duration-ms="2792" status="PASS">
+    <test started-at="2022-12-27T10:47:47 IST" name="MyFirstTest" finished-at="2022-12-27T10:47:54 IST" duration-ms="7348">
+      <class name="testCases.ManageLocationTestCase">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageLocationTestCase@18078bef]" started-at="2022-12-27T10:47:47 IST" name="beforeMethod" finished-at="2022-12-27T10:47:51 IST" duration-ms="4842" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="excelRead()[pri:0, instance:testCases.LoginTestCase@35e2d654]" started-at="2022-12-22T19:43:04 IST" name="excelRead" finished-at="2022-12-22T19:43:06 IST" duration-ms="1496" status="PASS">
+        <test-method signature="verifyTheCountOfActiveStatus()[pri:0, instance:testCases.ManageLocationTestCase@18078bef]" started-at="2022-12-27T10:47:51 IST" name="verifyTheCountOfActiveStatus" finished-at="2022-12-27T10:47:54 IST" duration-ms="2339" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excelRead -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCase@35e2d654]" started-at="2022-12-22T19:43:06 IST" name="afterMethod" finished-at="2022-12-22T19:43:06 IST" duration-ms="147" status="PASS">
+        </test-method> <!-- verifyTheCountOfActiveStatus -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageLocationTestCase@18078bef]" started-at="2022-12-27T10:47:54 IST" name="afterMethod" finished-at="2022-12-27T10:47:54 IST" duration-ms="109" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=excelRead status=SUCCESS method=LoginTestCase.excelRead()[pri:0, instance:testCases.LoginTestCase@35e2d654] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheCountOfActiveStatus status=SUCCESS method=ManageLocationTestCase.verifyTheCountOfActiveStatus()[pri:0, instance:testCases.ManageLocationTestCase@18078bef] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.LoginTestCase -->
+      </class> <!-- testCases.ManageLocationTestCase -->
     </test> <!-- MyFirstTest -->
   </suite> <!-- TestRunnerSuite -->
 </testng-results>

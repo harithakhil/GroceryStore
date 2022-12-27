@@ -73,6 +73,16 @@ public class GeneralUtilities {
 		Select select=new Select(element);
 		select.selectByIndex(index);
 	}
+	public void selectDropDownByValue(WebElement element,String value) 
+	{
+		Select select=new Select(element);
+		select.selectByValue(value);
+	}
+	public void selectDropDownByVisibleText(WebElement element,String text) 
+	{
+		Select select=new Select(element);
+		select.selectByVisibleText(text);
+	}
 	
 	public void dragandDrop(WebElement source, WebElement destination, WebDriver driver) 
 	{

@@ -5,18 +5,18 @@ import org.testng.annotations.Test;
 
 import constants.Constant;
 import elementRepository.LoginPage;
-import elementRepository.ManageDeliveryBoy;
+import elementRepository.ManageDeliveryBoyPage;
 
 public class ManageDeliveryBoyTestCase extends BaseClass {
 	
 	LoginPage lp;
-	ManageDeliveryBoy mdb;
+	ManageDeliveryBoyPage mdb;
 	
   @Test(priority=1,description="tool tip test case",groups= {"SmokeTest"})
   public void verifyToolTip() throws InterruptedException {
 	  
 	  lp=new LoginPage(driver);
-	  mdb=new ManageDeliveryBoy(driver);
+	  mdb=new ManageDeliveryBoyPage(driver);
 	  
 	  lp.presteps();
 	  mdb.clickOnManageDeliveryBoy();
@@ -31,7 +31,7 @@ public class ManageDeliveryBoyTestCase extends BaseClass {
   public void verifyStylePropertyOfNewButton() throws InterruptedException {
 	  
 	  lp=new LoginPage(driver);
-	  mdb=new ManageDeliveryBoy(driver);
+	  mdb=new ManageDeliveryBoyPage(driver);
 	  lp.presteps();
 	  
 	  String actualBorderColor=mdb.getStylePropertyOfNewButton();
@@ -42,7 +42,7 @@ public class ManageDeliveryBoyTestCase extends BaseClass {
   public void verifySearchButtonIsClickable() throws InterruptedException {
 	  
 	  lp=new LoginPage(driver);
-	  mdb=new ManageDeliveryBoy(driver);
+	  mdb=new ManageDeliveryBoyPage(driver);
 	  lp.presteps();
 	  
 	  boolean actualResult=mdb.IsSearchButtonIsClickable();

@@ -35,6 +35,9 @@ public class Constant {
 	public static final String EXPECTED_DELIVERY_ALERT_MSG="×\n"+ "Alert!\n"+ "Delivery Date Updated Successfully";
 	
 	public static final String EXPECTED_ADD_PRODUCT_ALERT_MSG="×\n"+ "Alert!\n"+ "Product Created Successfully";
+	public static final String EXPECTED_SELECTED_VALUE_TEXT="Belfast";
+
+
 }
 
         

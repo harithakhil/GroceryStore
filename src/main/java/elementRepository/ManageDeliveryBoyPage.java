@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.GeneralUtilities;
 
-public class ManageDeliveryBoy {
+public class ManageDeliveryBoyPage {
 	
 	WebDriver driver;
 	GeneralUtilities gu=new GeneralUtilities();
 	
-	public ManageDeliveryBoy(WebDriver driver) {
+	public ManageDeliveryBoyPage(WebDriver driver) {
 		
 		this.driver=driver;
 		PageFactory.initElements(driver, this);

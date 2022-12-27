@@ -3,9 +3,9 @@
 <test name="MyFirstTest">
 <parameter name="Browser" value="chrome"></parameter>
 <classes>
-<class name="testCases.LoginTestCase">
+<class name="testCases.ManageLocationTestCase">
 <methods>
-<include name="excelRead"></include>
+<include name="verifyTheCountOfActiveStatus"></include>
 </methods>
 </class >
 </classes>
