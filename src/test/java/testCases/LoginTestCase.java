@@ -35,7 +35,7 @@ public class LoginTestCase extends BaseClass {
 	}
 	
 	@Test(description="Login using data provider",dataProvider="data")
-	public void verifyLoggedUserDataProvider(String username,String password) {
+	public void verifyLoggedUser(String username,String password) {
 		lp=new LoginPage(driver);
 		//lp.presteps();
 		lp.getUserName(username);
@@ -64,7 +64,7 @@ public class LoginTestCase extends BaseClass {
 
 		}
 	
-	@Test
+	@Test(description="login by using excel read")
 	public void excelRead() {
 		lp=new LoginPage(driver);
 		loginList=lp.getLoginDetails();

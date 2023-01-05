@@ -18,10 +18,76 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
-public class ExtentReportUtility implements ITestListener {
-	ExtentSparkReporter sparkReporter;
-	ExtentReports reports;
-	ExtentTest test;
+public class ExtentReportUtility  implements ITestListener {
 
+    ExtentSparkReporter sparkReporter;// used for customizing the reports
+    ExtentReports reports;
+    ExtentTest test;
+
+    public void configureReport() {
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyy_hhmmss");
+        String strDate = formatter.format(date);
+
+        File reportPath = new File(System.getProperty("user.dir") + "//ExtentReport");
+
+        if (!reportPath.exists()) {
+            reportPath.mkdir();
+        }
+
+        // create file
+        sparkReporter = new ExtentSparkReporter(
+                System.getProperty("user.dir") + "//ExtentReport//" + "ExtentReport_" + strDate + ".html");
+        reports = new ExtentReports();
+        reports.attachReporter(sparkReporter);
+
+        // System details
+        reports.setSystemInfo("PC Name", "Haritha");
+        reports.setSystemInfo("OS", "Windows 11");
+        sparkReporter.config().setDocumentTitle("Extent Report Sample");
+        sparkReporter.config().setReportName("Report Summary");
+        sparkReporter.config().setTheme(Theme.DARK);
+    }
+
+    public void onTestStart(ITestResult result) {
+
+    }
+
+    public void onTestSuccess(ITestResult result) {
+        test = reports.createTest(result.getName());
+        test.log(Status.PASS,
+                MarkupHelper.createLabel("Name of the Passed Test Case is : " + result.getName(), ExtentColor.GREEN));
+
+    }
+
+    public void onTestFailure(ITestResult result) {
+        test = reports.createTest(result.getName());
+        test.log(Status.FAIL,
+                MarkupHelper.createLabel("Name of the Failed Test Case is : " + result.getName(), ExtentColor.RED));
+
+    }
+
+    public void onTestSkipped(ITestResult result) {
+        test = reports.createTest(result.getName());
+        test.log(Status.SKIP,
+                MarkupHelper.createLabel("Name of the skipped test case is : " + result.getName(), ExtentColor.INDIGO));
+
+    }
+
+    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+
+    }
+
+    public void onTestFailedWithTimeout(ITestResult result) {
+
+    }
+
+    public void onStart(ITestContext context) {
+        configureReport();
+    }
+
+    public void onFinish(ITestContext context) {
+        reports.flush();
+    }
 
 }

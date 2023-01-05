@@ -23,7 +23,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	  mop.searchAnOrder();
 	  
 	  String actualOrderList=mop.getTextOfSearchResultOfOrderId();
-	  String expectedOrderList="100";
+	  String expectedOrderList="336";
 	  Assert.assertEquals(actualOrderList, expectedOrderList,"invalid result");
   }
   
@@ -79,7 +79,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	  
 	  String actualOrderId=mop.getTextOfSearchedOrderId();
 	  String actualPaymentMode=mop.getTextOfSearchedPaymentMode();
-	  String expectedOrderId="367";
+	  String expectedOrderId="336";
 	  String expectedPaymentMode="COD";
 	  SoftAssert softAssert=new SoftAssert();
 	  softAssert.assertEquals(actualOrderId, expectedOrderId,"wrong search result of order id");

@@ -1,0 +1,20 @@
+<suite name="My Extent Report Suite">
+<listeners>
+<listener class-name="utilities.ExtentReportUtility">	
+</listener>
+</listeners>
+<test name="MyTestName">
+<parameter name="Browser" value="chrome"></parameter>
+<classes>
+<class name="testCases.LoginTestCase"></class>
+<class name="testCases.DashboardTestCase"></class>
+<class name="testCases.ManageProductTestCase"></class>
+<class name="testCases.ManageOrdersTestCase"></class>
+<class name="testCases.ManageDeliveryBoyTestCase"></class>
+<class name="testCases.ManageLocationTestCase"></class>
+<class name="testCases.MobileSliderTestCase"></class>
+<class name="testCases.PushNotificationTestCase"></class>
+<class name="testCases.AdminUsersTestCase"></class>
+</classes>
+</test>
+</suite>

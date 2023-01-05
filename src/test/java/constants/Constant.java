@@ -37,7 +37,10 @@ public class Constant {
 	public static final String EXPECTED_ADD_PRODUCT_ALERT_MSG="×\n"+ "Alert!\n"+ "Product Created Successfully";
 	public static final String EXPECTED_SELECTED_VALUE_TEXT="Belfast";
 
+	public static final String EXPECTED_ADMIN_USERS_SUCCESS_ALERT_MSG="×\n"+ "Alert!\n"+ "User Created Successfully";
+	public static final String EXPECTED_ADMIN_USERS_UNSUCCESS_ALERT_MSG="×\n"+ "Alert!\n"+ "Username already exists.";
 
+	public static final String EXPECTED_SEARCH_RESULT_TEXT="ammu";
 }
 
         

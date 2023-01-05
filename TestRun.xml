@@ -3,10 +3,10 @@
 <test name="MyFirstTest">
 <parameter name="Browser" value="chrome"></parameter>
 <classes>
-<class name="testCases.ManageLocationTestCase">
-<methods>
-<include name="verifyTheCountOfActiveStatus"></include>
-</methods>
+<class name="testCases.ManageOrdersTestCase">
+<!-- <methods>
+<include name="verifyTheSearchOfExistingAdminUser"></include>
+</methods>-->
 </class >
 </classes>
 </test>
