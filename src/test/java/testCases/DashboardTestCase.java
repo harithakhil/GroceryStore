@@ -16,7 +16,7 @@ public class DashboardTestCase extends BaseClass {
 	  lp=new LoginPage(driver);
 	  lp.presteps();
 	  dp=new DashboardPage(driver);
-	  
+	  //**************************************************
 	  String actualBackgroundColor=dp.getStyleProperty();
 	  String expectedBackgroundColor=Constant.HOME_BACKGROUND_COLOR;
 	  Assert.assertEquals(actualBackgroundColor, expectedBackgroundColor,Constant.HOME_STYLE_ERROR);
