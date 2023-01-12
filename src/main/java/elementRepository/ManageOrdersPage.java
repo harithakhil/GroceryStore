@@ -12,11 +12,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import utilities.GeneralUtilities;
+import utilities.Synchronization;
 
 public class ManageOrdersPage {
 	
 	WebDriver driver;
 	GeneralUtilities gu=new GeneralUtilities();
+	Synchronization syn=new Synchronization();
 	
 	public ManageOrdersPage(WebDriver driver) {
 		this.driver=driver;
@@ -96,7 +98,10 @@ public class ManageOrdersPage {
 		gu.mediumDelay(3000);
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView();", changeDeliveryDateOfSearchedOrder);
+		syn.elementIsToBeClickable(driver, "//a[contains(text(),'Change Delivery Date')]");
 		js.executeScript("arguments[0].click();", changeDeliveryDateOfSearchedOrder);
+		
+		
 	}
 	public void sendDeliveryDate(String date) {
 		gu.sendText(deliveryDate, date);
@@ -121,7 +126,7 @@ public class ManageOrdersPage {
 	}
 	public void searchAnOrder() {
 		clickOnFirstSearchButton();
-		sendOrderId("336");
+		sendOrderId("310");
 		clickOnSecondSearchButton();
 		gu.scrollToTheElement(validateOrderId, driver);
 	}

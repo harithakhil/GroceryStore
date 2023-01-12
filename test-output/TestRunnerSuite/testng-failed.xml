@@ -6,8 +6,7 @@
     <classes>
       <class name="testCases.ManageOrdersTestCase">
         <methods>
-          <include name="verifyThePaymentModeAndOrderId"/>
-          <include name="verifyTheSearchOfExistingOrder"/>
+          <include name="verifyTheChangeDeliveryDateOfSearchedOrder"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>

@@ -176,7 +176,7 @@ public class ManageProductPage {
 	public boolean validateImageUpload() throws InterruptedException, AWTException {
 		gu.scrollToTheElement(imageUpload, driver);
 		gu.mediumDelay(2000);
-		fh.fileUpload("C:\\Users\\harit\\eclipse-workspace\\GroceryStore\\src\\main\\resources\\Images\\meat_puff.jpg", imageUpload, driver);
+		fh.fileUpload("C:\\Users\\harit\\OneDrive\\Desktop\\eclipse-workspace\\GroceryStore\\src\\main\\resources\\Images\\egg_puff.jpg", imageUpload, driver);
 		gu.mediumDelay(2000);
 		//imageUpload("C:\\Users\\harit\\eclipse-workspace\\GroceryStore\\src\\main\\resources\\Images\\meat_puff.jpg");
 		return gu.elementIsDisplayed(imagePreview);

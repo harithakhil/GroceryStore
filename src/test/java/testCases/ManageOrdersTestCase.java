@@ -13,7 +13,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	LoginPage lp;
 	ManageOrdersPage mop;
 	
-  @Test(groups= {"SmokeTest"})
+  @Test(priority=1,description = "search an existing order", groups= {"SmokeTest"})
   public void verifyTheSearchOfExistingOrder() {
 	  lp=new LoginPage(driver);
 	  mop=new ManageOrdersPage(driver);
@@ -27,7 +27,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	  Assert.assertEquals(actualOrderList, expectedOrderList,"invalid result");
   }
   
-  @Test
+  @Test(priority = 2,description = "change the delivery date of a searched order")
   public void verifyTheChangeDeliveryDateOfSearchedOrder() throws InterruptedException {
 	  lp=new LoginPage(driver);
 	  mop=new ManageOrdersPage(driver);
@@ -42,7 +42,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	  Assert.assertEquals(actualAlertDeliveryMsg, Constant.EXPECTED_DELIVERY_ALERT_MSG,"invalid result");
   }
   
-  @Test
+  @Test(priority = 3,description = "search of a non existing order")
   public void verifyTheSearchOfNonExistingOrder() {
 	  lp=new LoginPage(driver);
 	  mop=new ManageOrdersPage(driver);
@@ -55,7 +55,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	  Assert.assertEquals(actualOrderList, Constant.EXPECTED_UNAUTHORIZED_SEARCH_RESULT_TEXT,"invalid result");
   }
   
-  @Test()
+  @Test(priority = 4,description = "verify whether the payment mode is bank")
   public void verifyThePaymentModeIsBank() {
 	  lp=new LoginPage(driver);
 	  mop=new ManageOrdersPage(driver);
@@ -69,7 +69,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	  Assert.assertEquals(actualValue, expectedValue,"invalid result");
   }
   
-  @Test
+  @Test(priority = 5,description = "verification of payment mode and order id")
   public void verifyThePaymentModeAndOrderId() {
 	  lp=new LoginPage(driver);
 	  mop=new ManageOrdersPage(driver);
@@ -87,7 +87,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	  softAssert.assertAll();
   }
   
-  @Test()
+  @Test(priority = 6,description = "verify the status in search order")
   public void verifyTheValuesOfStatusInSearchOrder() {
 	  lp=new LoginPage(driver);
 	  mop=new ManageOrdersPage(driver);

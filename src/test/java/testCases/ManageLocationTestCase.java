@@ -16,7 +16,7 @@ public class ManageLocationTestCase extends BaseClass {
 	LoginPage lp;
 	ManageLocationPage mlp;
 	
-  @Test
+  @Test(priority = 1,description = "verification of the active status count")
   public void verifyTheCountOfActiveStatus() {
 	  lp=new LoginPage(driver);
 	  mlp=new ManageLocationPage(driver);
@@ -26,7 +26,7 @@ public class ManageLocationTestCase extends BaseClass {
 	  Assert.assertTrue(value);
   }
   
-  @Test
+  @Test(priority = 2,description = "verification of the selected value")
   public void verifyTheSelectedValueIsBelfast() {
 	  lp=new LoginPage(driver);
 	  mlp=new ManageLocationPage(driver);

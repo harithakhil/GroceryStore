@@ -4,8 +4,9 @@
 </parameter>
 <groups>
 <run>
-<include name="SmokeTest">
-</include>
+<include name="SmokeTest"/>
+<include name="SanityTest"/>
+<include name="RegressionTest"/>
 </run>
 </groups>
 <classes>

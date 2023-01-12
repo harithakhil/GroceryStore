@@ -27,7 +27,7 @@ public class ManageDeliveryBoyTestCase extends BaseClass {
 	  
 	  
   }
-  @Test(priority=2,description="new button test case")
+  @Test(priority=2,description="new button test case",groups= {"SanityTest"})
   public void verifyStylePropertyOfNewButton() throws InterruptedException {
 	  
 	  lp=new LoginPage(driver);

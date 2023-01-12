@@ -5,6 +5,12 @@
 </listeners>
 <test name="MyTestName">
 <parameter name="Browser" value="chrome"></parameter>
+<groups>
+<run>
+<include name="SmokeTest"/>
+<include name="SanityTest"/>
+</run>
+</groups>
 <classes>
 <class name="testCases.LoginTestCase"></class>
 <class name="testCases.DashboardTestCase"></class>

@@ -12,7 +12,7 @@ public class MobileSliderTestCase extends BaseClass {
 	LoginPage lp;
 	MobileSliderPage msp;
 	
-  @Test
+  @Test(priority = 1,description = "verification of text mobile slider")
   public void verifyTextOfMobileSlider() {
 	  
 	  lp=new LoginPage(driver);
@@ -24,7 +24,7 @@ public class MobileSliderTestCase extends BaseClass {
 	  
   }
   
-  @Test
+  @Test(priority = 2,description = "verify if the uploaded image is displayed")
   public void verifyFirstImageIsDisplayedOrNot() {
 	  
 	  lp=new LoginPage(driver);
@@ -37,7 +37,7 @@ public class MobileSliderTestCase extends BaseClass {
 	  
   }
   
-  @Test
+  @Test(priority = 3,description = "verify the image status is active or not")
   public void verifyFirstImageStatusIsActiveOrNot() {
 	  
 	  lp=new LoginPage(driver);

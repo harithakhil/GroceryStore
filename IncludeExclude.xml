@@ -1,12 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestRunnerSuite">
 <test name="MyFirstTest">
-<parameter name="Browser" value="edge"></parameter>
+<parameter name="Browser" value="chrome"></parameter>
 <classes>
-<class name="testCases.LoginTestCase">
+<class name="testCases.ManageOrdersTestCase">
 <methods>
-<exclude name="profileStyleValidation">
-</exclude>
+<include name="verifyTheChangeDeliveryDateOfSearchedOrder"></include>
 <!-- include is used to include a particular method  and exclude is used to exclude a particular method-->
 </methods>
 </class>

@@ -7,13 +7,6 @@
   <test thread-count="5" name="MyTestName(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.LoginTestCase">
-        <methods>
-          <include name="verifyLoggedUser" invocation-numbers="1 2 3"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- testCases.LoginTestCase -->
       <class name="testCases.ManageProductTestCase">
         <methods>
           <include name="verifyImageUpload"/>

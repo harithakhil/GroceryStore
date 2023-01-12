@@ -11,7 +11,7 @@ public class DashboardTestCase extends BaseClass {
 	LoginPage lp;
 	DashboardPage dp;
 	
-  @Test
+  @Test(priority = 1,description = "validating the background color of home")
   public void homeStyleValidation() {
 	  lp=new LoginPage(driver);
 	  lp.presteps();
@@ -22,7 +22,7 @@ public class DashboardTestCase extends BaseClass {
 	  Assert.assertEquals(actualBackgroundColor, expectedBackgroundColor,Constant.HOME_STYLE_ERROR);
   }
   
-  @Test
+  @Test(priority = 2,description = "validate the manage expenses text")
   public void verifyTextOfManageExpenses() {
 	  lp=new LoginPage(driver);
 	  lp.presteps();
@@ -33,7 +33,7 @@ public class DashboardTestCase extends BaseClass {
 	  Assert.assertEquals(actualManageExpensesText, expectedManageExpensesText,Constant.MANAGE_EXPENSES_TEXT_ERROR);
   }
   
-  @Test
+  @Test(priority = 3,description = "validate the manage users text")
   public void verifyTextOfManageUsers() {
 	  lp=new LoginPage(driver);
 	  lp.presteps();

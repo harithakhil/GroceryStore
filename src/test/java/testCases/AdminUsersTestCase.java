@@ -10,7 +10,7 @@ import elementRepository.LoginPage;
 public class AdminUsersTestCase extends BaseClass {
 	LoginPage lp;
 	AdminUsersPage aup;
-  @Test(retryAnalyzer=retryTest.RetryAnalyzer.class)
+  @Test(priority=1,description="admin user creation",retryAnalyzer=retryTest.RetryAnalyzer.class)
   public void verifyTheAdminUserIsAbleToCreate() {
 	  lp=new LoginPage(driver);
 	  aup=new AdminUsersPage(driver);
@@ -19,7 +19,7 @@ public class AdminUsersTestCase extends BaseClass {
 	  String actualAlert=aup.getTextOfSuccessAlert();
 	  Assert.assertEquals(actualAlert, Constant.EXPECTED_ADMIN_USERS_SUCCESS_ALERT_MSG,"admin user not created successfully");
   }
-  @Test
+  @Test(priority=2,description = "checking whether an existing user is able to create")
   public void verifyIfTheExistingAdminUserIsAbleToCreateOrNot() {
 	  lp=new LoginPage(driver);
 	  aup=new AdminUsersPage(driver);
@@ -29,7 +29,7 @@ public class AdminUsersTestCase extends BaseClass {
 	  String actualAlert=aup.getTextOfUnSuccessAlert();
 	  Assert.assertEquals(actualAlert, Constant.EXPECTED_ADMIN_USERS_UNSUCCESS_ALERT_MSG,"admin user created successfully");
   }
-  @Test
+  @Test(priority = 3,description = "search of an existing admin user")
   public void verifyTheSearchOfExistingAdminUser() {
 	  lp=new LoginPage(driver);
 	  aup=new AdminUsersPage(driver);

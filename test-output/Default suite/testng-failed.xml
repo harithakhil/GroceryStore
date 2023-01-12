@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.DashboardTestCase">
+      <class name="testCases.PushNotificationTestCase">
         <methods>
-          <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="homeStyleValidation"/>
+          <include name="afterMethod"/>
+          <include name="verifyTheColorOfSendButton"/>
         </methods>
-      </class> <!-- testCases.DashboardTestCase -->
+      </class> <!-- testCases.PushNotificationTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

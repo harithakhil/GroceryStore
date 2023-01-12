@@ -11,7 +11,7 @@ public class PushNotificationTestCase extends BaseClass {
 	LoginPage lp;
 	PushNotificationPage pn;
 	
-  @Test
+  @Test(priority = 1,description = "verify the alert text")
   public void verifyTheAlertText() {
 	  lp=new LoginPage(driver);
 	  pn=new PushNotificationPage(driver);
@@ -23,12 +23,11 @@ public class PushNotificationTestCase extends BaseClass {
 	  pn.clickOnSendButton();
 	  
 	  String actualAlert=pn.getTextOfAlertMsg();
-	  System.out.println(actualAlert);
 	  Assert.assertEquals(actualAlert, Constant.EXPECTED_ALERT_MSG,"Alert msg is different");
 	  
   }
   
-  @Test
+  @Test(priority = 2,description = "verify the background color of alert")
   public void verifyTheBackgroundColorOfAlert() {
 	  lp=new LoginPage(driver);
 	  pn=new PushNotificationPage(driver);
@@ -40,13 +39,12 @@ public class PushNotificationTestCase extends BaseClass {
 	  pn.clickOnSendButton();
 	  
 	  String actualAlertColor=pn.getBackgorundColorOfAlertMsg();
-	  //System.out.println(actualAlertColor);
 	  String extectedAlertColor="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 	  Assert.assertEquals(actualAlertColor, extectedAlertColor,"Alert msg background color is different");
 	  
   }
   
-  @Test
+  @Test(priority = 3,description = "verify the color of send button")
   public void verifyTheColorOfSendButton() {
 	  lp=new LoginPage(driver);
 	  pn=new PushNotificationPage(driver);
@@ -59,7 +57,7 @@ public class PushNotificationTestCase extends BaseClass {
 	  
   }
   
-  @Test
+  @Test(priority = 4,description = "verify the color of mandatory symbol")
   public void verifyTheColorOfMandatorySymbolOfTitle() {
 	  lp=new LoginPage(driver);
 	  pn=new PushNotificationPage(driver);
@@ -72,7 +70,7 @@ public class PushNotificationTestCase extends BaseClass {
 	  
   }
   
-  @Test
+  @Test(priority = 5,description = "verify the title of push notification")
   public void verifyTheTitleOfPushNotification() {
 	  lp=new LoginPage(driver);
 	  pn=new PushNotificationPage(driver);
