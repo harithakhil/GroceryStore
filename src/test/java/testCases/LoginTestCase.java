@@ -31,7 +31,8 @@ public class LoginTestCase extends BaseClass {
 		lp.getPassWord(password);
 		lp.clickSignin();
 		
-		Assert.assertFalse(false, "login with incorrect credentials");
+		boolean actualAlert=lp.alertMsg();
+		Assert.assertTrue(actualAlert,"login successful");
 	}
 	
 	@Test(priority=4,description="verification of remember checkbox is displayed")

@@ -3,9 +3,9 @@
 <test name="MyFirstTest">
 <parameter name="Browser" value="chrome"></parameter>
 <classes>
-<class name="testCases.ManageOrdersTestCase">
+<class name="testCases.ManageProductTestCase">
 <methods>
-<include name="verifyTheChangeDeliveryDateOfSearchedOrder"></include>
+<include name="verifyImageUpload"></include>
 <!-- include is used to include a particular method  and exclude is used to exclude a particular method-->
 </methods>
 </class>

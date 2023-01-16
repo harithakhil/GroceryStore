@@ -41,6 +41,10 @@ public class Constant {
 	public static final String EXPECTED_ADMIN_USERS_UNSUCCESS_ALERT_MSG="×\n"+ "Alert!\n"+ "Username already exists.";
 
 	public static final String EXPECTED_SEARCH_RESULT_TEXT="ammu";
+	public static final String EXPECTED_ORDER_ID="325";
+	public static final String EXPECTED_PAYMENT_MODE="COD";
+	
+	public static final String EXPECTED_ALERT_COLOR="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 }
 
         

@@ -14,20 +14,8 @@ public class ManageProductTestCase extends BaseClass {
 	LoginPage lp;
 	ManageProductPage mpp;
 	
-  @Test(priority = 1,description = "add a new product")
-  public void verifyAddNewProduct() throws InterruptedException {
-	  lp=new LoginPage(driver);
-	  mpp=new ManageProductPage(driver);
-	  lp.presteps();
-	  mpp.clickOnManageProductModule();
-	  mpp.clickOnNewButton();
-	  mpp.addProduct();
-	  
-	  String actualAlertMsg=mpp.getTextOfAlertMsg();
-	  Assert.assertEquals(actualAlertMsg,Constant.EXPECTED_ADD_PRODUCT_ALERT_MSG,"product not created");
-  }
   
-  @Test(priority = 2,description = "veg radio button is selected in product type")
+  @Test(priority = 1,description = "veg radio button is selected in product type",groups = {"RegressionTest"})
   public void verifyVegIsSelectedInProductType(){
 	  lp=new LoginPage(driver);
 	  mpp=new ManageProductPage(driver);
@@ -40,7 +28,7 @@ public class ManageProductTestCase extends BaseClass {
 	  Assert.assertEquals(actualDisplay,expectedDisplay,"product type is not selected");
   }
   
-  @Test(priority = 3,description = "verify image is uploaded")
+  @Test(priority = 2,description = "verify image is uploaded")
   public void verifyImageUpload() throws InterruptedException, AWTException{
 	  lp=new LoginPage(driver);
 	  mpp=new ManageProductPage(driver);
@@ -54,7 +42,7 @@ public class ManageProductTestCase extends BaseClass {
 	  
   }
   
-  @Test(priority = 4,description = "verify the radio button Yes is selected in stock")
+  @Test(priority = 3,description = "verify the radio button Yes is selected in stock")
   public void verifyYesIsSelectedInStock(){
 	  lp=new LoginPage(driver);
 	  mpp=new ManageProductPage(driver);

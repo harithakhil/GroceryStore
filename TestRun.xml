@@ -3,7 +3,7 @@
 <test name="MyFirstTest">
 <parameter name="Browser" value="chrome"></parameter>
 <classes>
-<class name="testCases.ManageOrdersTestCase">
+<class name="testCases.ManageProductTestCase">
 <!-- <methods>
 <include name="verifyTheSearchOfExistingAdminUser"></include>
 </methods>-->

@@ -110,24 +110,6 @@ public class GeneralUtilities {
 	public void sendTextToAlert(WebDriver driver, String text) {
 		driver.switchTo().alert().sendKeys(text);
 	}
-	
-	public void selectFuncbyindex(WebElement element, int index) 
-	{
-		Select select = new Select(element);
-		select.selectByIndex(index);
-	}
-
-	public void selectFuncbyValue(WebElement element, String value) 
-	{
-		Select select1 = new Select(element);
-		select1.selectByValue(value);
-	}
-	
-	public void selectFuncbyViText(WebElement element, String visisbletext) 
-	{
-		Select select1 = new Select(element);
-		select1.selectByVisibleText(visisbletext);
-	}
 	public void deselectFuncbyindex(WebElement element, int index) {
 		Select select = new Select(element);
 		select.deselectByIndex(index);

@@ -12,7 +12,7 @@ public class MobileSliderTestCase extends BaseClass {
 	LoginPage lp;
 	MobileSliderPage msp;
 	
-  @Test(priority = 1,description = "verification of text mobile slider")
+  @Test(priority = 1,description = "verification of text mobile slider",groups = {"RegressionTest"})
   public void verifyTextOfMobileSlider() {
 	  
 	  lp=new LoginPage(driver);

@@ -16,7 +16,7 @@ public class ManageLocationTestCase extends BaseClass {
 	LoginPage lp;
 	ManageLocationPage mlp;
 	
-  @Test(priority = 1,description = "verification of the active status count")
+  @Test(priority = 1,description = "verification of the active status count",groups = {"RegressionTest"})
   public void verifyTheCountOfActiveStatus() {
 	  lp=new LoginPage(driver);
 	  mlp=new ManageLocationPage(driver);

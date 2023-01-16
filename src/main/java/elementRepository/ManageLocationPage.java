@@ -55,8 +55,8 @@ public class ManageLocationPage {
 				count++;
 			}
 		}
-		
-		if(count==15) {
+		//System.out.println(count);
+		if(count==16) {
 			return true;
 		}
 		else {

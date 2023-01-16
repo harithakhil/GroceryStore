@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [MyFirstTest]">
+  <test thread-count="5" name="MyTestName(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+        <include name="SanityTest"/>
+        <include name="RegressionTest"/>
+      </run>
+    </groups>
     <classes>
       <class name="testCases.ManageLocationTestCase">
         <methods>
@@ -11,5 +19,5 @@
         </methods>
       </class> <!-- testCases.ManageLocationTestCase -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- MyTestName(failed) -->
+</suite> <!-- Failed suite [MyFirstTest] -->

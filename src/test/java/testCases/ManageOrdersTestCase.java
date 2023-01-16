@@ -23,8 +23,7 @@ public class ManageOrdersTestCase extends BaseClass{
 	  mop.searchAnOrder();
 	  
 	  String actualOrderList=mop.getTextOfSearchResultOfOrderId();
-	  String expectedOrderList="336";
-	  Assert.assertEquals(actualOrderList, expectedOrderList,"invalid result");
+	  Assert.assertEquals(actualOrderList, Constant.EXPECTED_ORDER_ID,"invalid result");
   }
   
   @Test(priority = 2,description = "change the delivery date of a searched order")
@@ -64,7 +63,6 @@ public class ManageOrdersTestCase extends BaseClass{
 	  mop.clickOnManageOrders();
 	  mop.searchAnOrderUsingPaymentMode();
 	  boolean actualValue=mop.paymentModeColumn();
-	 // System.out.println(actualValue);
 	  boolean expectedValue=true;
 	  Assert.assertEquals(actualValue, expectedValue,"invalid result");
   }
@@ -79,8 +77,8 @@ public class ManageOrdersTestCase extends BaseClass{
 	  
 	  String actualOrderId=mop.getTextOfSearchedOrderId();
 	  String actualPaymentMode=mop.getTextOfSearchedPaymentMode();
-	  String expectedOrderId="336";
-	  String expectedPaymentMode="COD";
+	  String expectedOrderId=Constant.EXPECTED_ORDER_ID;
+	  String expectedPaymentMode=Constant.EXPECTED_PAYMENT_MODE;
 	  SoftAssert softAssert=new SoftAssert();
 	  softAssert.assertEquals(actualOrderId, expectedOrderId,"wrong search result of order id");
 	  softAssert.assertEquals(actualPaymentMode, expectedPaymentMode,"wrong search result of payment mode");

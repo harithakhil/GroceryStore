@@ -126,7 +126,7 @@ public class ManageOrdersPage {
 	}
 	public void searchAnOrder() {
 		clickOnFirstSearchButton();
-		sendOrderId("310");
+		sendOrderId("325");
 		clickOnSecondSearchButton();
 		gu.scrollToTheElement(validateOrderId, driver);
 	}
@@ -172,7 +172,7 @@ public class ManageOrdersPage {
 	
 	public void validationOfPaymentModeAndOrderId() {
 		clickOnFirstSearchButton();
-		sendOrderId("367");
+		sendOrderId("325");
 		clickOnSecondSearchButton();
 	}
 	public String getTextOfSearchedOrderId() {

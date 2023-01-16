@@ -103,11 +103,11 @@ public class ManageProductPage {
 		gu.sendText(tagName, tag);
 	}
 	public void selectCategory() {
-		gu.selectDropDownByIndex(category, 1);
+		gu.selectDropDownByIndex(category, 0);
 	}
 	public void selectSubCategory() throws InterruptedException {
 		gu.mediumDelay(3000);
-		gu.selectDropDownByIndex(subCategory, 2);
+		gu.selectDropDownByIndex(subCategory, 0);
 	}
 	public void selectGroup() {
 		gu.selectDropDownByIndex(group, 1);
@@ -150,33 +150,15 @@ public class ManageProductPage {
 	public String getTextOfAlertMsg() {
 		return gu.getElementText(alertMsg);
 	}
-	
-	public void addProduct() throws InterruptedException{
-		sendTitle("Puffs");
-		selectProductType();
-		sendTagName("puff");
-		selectCategory();
-		selectSubCategory();
-		selectGroup();
-		selectPriceType();
-		selectMinimumPiece();
-		sendMaximumQuantity("100");
-		sendPrice("40");
-		sendMrp("35");
-		sendStockAvailability("200");
-		sendPurchasePrice("35");
-		imageUpload("C:\\Users\\harit\\OneDrive\\Desktop\\Test images\\meat_puff.jpg");;
-		subImageUpload("C:\\Users\\harit\\OneDrive\\Desktop\\Test images\\egg_puff.jpg");
-		clickOnSaveButton();
-	}
-	
+
 	public boolean productTypeIsSelected() {
 		return gu.elementIsSelected(productTypeVeg);
 	}
 	public boolean validateImageUpload() throws InterruptedException, AWTException {
+		gu.mediumDelay(2000);
 		gu.scrollToTheElement(imageUpload, driver);
 		gu.mediumDelay(2000);
-		fh.fileUpload("C:\\Users\\harit\\OneDrive\\Desktop\\eclipse-workspace\\GroceryStore\\src\\main\\resources\\Images\\egg_puff.jpg", imageUpload, driver);
+		fh.fileUpload("C:\\Users\\harit\\OneDrive\\Desktop\\eclipse-workspace\\GroceryStore\\src\\main\\resources\\Images\\cake.jpg", imageUpload, driver);
 		gu.mediumDelay(2000);
 		//imageUpload("C:\\Users\\harit\\eclipse-workspace\\GroceryStore\\src\\main\\resources\\Images\\meat_puff.jpg");
 		return gu.elementIsDisplayed(imagePreview);

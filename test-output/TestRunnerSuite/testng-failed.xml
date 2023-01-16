@@ -4,13 +4,13 @@
   <test thread-count="5" name="MyFirstTest(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.ManageOrdersTestCase">
+      <class name="testCases.ManageProductTestCase">
         <methods>
-          <include name="verifyTheChangeDeliveryDateOfSearchedOrder"/>
+          <include name="verifyImageUpload"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testCases.ManageOrdersTestCase -->
+      </class> <!-- testCases.ManageProductTestCase -->
     </classes>
   </test> <!-- MyFirstTest(failed) -->
 </suite> <!-- Failed suite [TestRunnerSuite] -->

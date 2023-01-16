@@ -12,6 +12,9 @@
 <classes>
 <class name="testCases.ManageOrdersTestCase"/>
 <class name="testCases.ManageDeliveryBoyTestCase"/>
+<class name="testCases.ManageLocationTestCase"/>
+<class name="testCases.MobileSliderTestCase"/>
+<class name="testCases.PushNotificationTestCase"/>
 </classes>
 </test>
 </suite>

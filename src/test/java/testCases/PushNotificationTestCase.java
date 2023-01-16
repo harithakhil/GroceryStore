@@ -11,7 +11,7 @@ public class PushNotificationTestCase extends BaseClass {
 	LoginPage lp;
 	PushNotificationPage pn;
 	
-  @Test(priority = 1,description = "verify the alert text")
+  @Test(priority = 1,description = "verify the alert text",groups = {"SanityTest"})
   public void verifyTheAlertText() {
 	  lp=new LoginPage(driver);
 	  pn=new PushNotificationPage(driver);
@@ -39,12 +39,12 @@ public class PushNotificationTestCase extends BaseClass {
 	  pn.clickOnSendButton();
 	  
 	  String actualAlertColor=pn.getBackgorundColorOfAlertMsg();
-	  String extectedAlertColor="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
+	  String extectedAlertColor=Constant.EXPECTED_ALERT_COLOR;
 	  Assert.assertEquals(actualAlertColor, extectedAlertColor,"Alert msg background color is different");
 	  
   }
   
-  @Test(priority = 3,description = "verify the color of send button")
+  @Test(priority = 3,description = "verify the color of send button",groups = {"SanityTest"})
   public void verifyTheColorOfSendButton() {
 	  lp=new LoginPage(driver);
 	  pn=new PushNotificationPage(driver);
