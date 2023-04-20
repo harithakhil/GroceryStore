@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
@@ -39,7 +40,9 @@ public class BaseClass {
 			testBasic();
 			//System.out.println(System.getProperty("user.dir"));
 			System.setProperty(prop.getProperty("chromeBrowserDriver"),System.getProperty("user.dir") + prop.getProperty("chromeDriverPath"));
-			driver=new ChromeDriver();
+			ChromeOptions co=new ChromeOptions();
+			co.addArguments("--remote-allow-origins=*");
+			driver=new ChromeDriver(co);
 		}
 		else if(browser.equals("firefox")) 
 		{
