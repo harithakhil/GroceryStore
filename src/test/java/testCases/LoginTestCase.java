@@ -67,11 +67,14 @@ public class LoginTestCase extends BaseClass {
 		}
 	
 	@Test(priority=3,description="login by using excel read")
-	public void excelRead() {
+	public void verifyTheLoginUsingExcelRead() {
 		lp=new LoginPage(driver);
 		loginList=lp.getLoginDetails();
-		System.out.println(loginList);
 		lp.loginCredentials(loginList.get(0), loginList.get(1));
+		
+		String expectedProfileName=Constant.EXPECTED_PROFILE_NAME;
+		String actualProfileName=lp.profileVerification();
+		Assert.assertEquals(actualProfileName, expectedProfileName,Constant.LOGIN_ERROR);
 	}
 	
 	

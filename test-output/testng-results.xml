@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="25" total="33" passed="8" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-16T12:39:39 IST" name="My Extent Report Suite" finished-at="2023-01-16T12:41:20 IST" duration-ms="101181">
+  <suite started-at="2023-01-16T18:16:18 IST" name="TestRunnerSuite" finished-at="2023-01-16T18:16:22 IST" duration-ms="4236">
     <groups>
-      <group name="SmokeTest">
-        <method signature="ManageDeliveryBoyTestCase.verifyToolTip()[pri:1, instance:testCases.ManageDeliveryBoyTestCase@4f209819]" name="verifyToolTip" class="testCases.ManageDeliveryBoyTestCase"/>
-        <method signature="ManageOrdersTestCase.verifyTheSearchOfExistingOrder()[pri:1, instance:testCases.ManageOrdersTestCase@3d74bf60]" name="verifyTheSearchOfExistingOrder" class="testCases.ManageOrdersTestCase"/>
-      </group> <!-- SmokeTest -->
-      <group name="SanityTest">
-        <method signature="ManageDeliveryBoyTestCase.verifyStylePropertyOfNewButton()[pri:2, instance:testCases.ManageDeliveryBoyTestCase@4f209819]" name="verifyStylePropertyOfNewButton" class="testCases.ManageDeliveryBoyTestCase"/>
-        <method signature="PushNotificationTestCase.verifyTheAlertText()[pri:1, instance:testCases.PushNotificationTestCase@39529185]" name="verifyTheAlertText" class="testCases.PushNotificationTestCase"/>
-        <method signature="PushNotificationTestCase.verifyTheColorOfSendButton()[pri:3, instance:testCases.PushNotificationTestCase@39529185]" name="verifyTheColorOfSendButton" class="testCases.PushNotificationTestCase"/>
-      </group> <!-- SanityTest -->
-      <group name="RegressionTest">
-        <method signature="ManageLocationTestCase.verifyTheCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCase@15eb5ee5]" name="verifyTheCountOfActiveStatus" class="testCases.ManageLocationTestCase"/>
-        <method signature="ManageProductTestCase.verifyVegIsSelectedInProductType()[pri:1, instance:testCases.ManageProductTestCase@15c43bd9]" name="verifyVegIsSelectedInProductType" class="testCases.ManageProductTestCase"/>
-        <method signature="MobileSliderTestCase.verifyTextOfMobileSlider()[pri:1, instance:testCases.MobileSliderTestCase@2145b572]" name="verifyTextOfMobileSlider" class="testCases.MobileSliderTestCase"/>
-      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2023-01-16T12:39:39 IST" name="MyTestName" finished-at="2023-01-16T12:41:20 IST" duration-ms="101181">
-      <class name="testCases.MobileSliderTestCase">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.MobileSliderTestCase@2145b572]" started-at="2023-01-16T12:40:54 IST" name="beforeMethod" finished-at="2023-01-16T12:40:56 IST" duration-ms="1771" status="PASS">
+    <test started-at="2023-01-16T18:16:18 IST" name="MyFirstTest" finished-at="2023-01-16T18:16:22 IST" duration-ms="4236">
+      <class name="testCases.LoginTestCase">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.LoginTestCase@34b7ac2f]" started-at="2023-01-16T18:16:18 IST" name="beforeMethod" finished-at="2023-01-16T18:16:20 IST" duration-ms="2641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,214 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyTextOfMobileSlider()[pri:1, instance:testCases.MobileSliderTestCase@2145b572]" started-at="2023-01-16T12:40:56 IST" name="verifyTextOfMobileSlider" description="verification of text mobile slider" finished-at="2023-01-16T12:40:57 IST" duration-ms="732" status="PASS">
+        <test-method signature="excelRead()[pri:3, instance:testCases.LoginTestCase@34b7ac2f]" started-at="2023-01-16T18:16:20 IST" name="excelRead" description="login by using excel read" finished-at="2023-01-16T18:16:22 IST" duration-ms="1438" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTextOfMobileSlider -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.MobileSliderTestCase@2145b572]" started-at="2023-01-16T12:40:57 IST" name="afterMethod" finished-at="2023-01-16T12:40:57 IST" duration-ms="117" status="PASS">
+        </test-method> <!-- excelRead -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCase@34b7ac2f]" started-at="2023-01-16T18:16:22 IST" name="afterMethod" finished-at="2023-01-16T18:16:22 IST" duration-ms="128" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTextOfMobileSlider status=SUCCESS method=MobileSliderTestCase.verifyTextOfMobileSlider()[pri:1, instance:testCases.MobileSliderTestCase@2145b572] output={null}]]]>
+                <![CDATA[[TestResult name=excelRead status=SUCCESS method=LoginTestCase.excelRead()[pri:3, instance:testCases.LoginTestCase@34b7ac2f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.MobileSliderTestCase -->
-      <class name="testCases.ManageLocationTestCase">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageLocationTestCase@15eb5ee5]" started-at="2023-01-16T12:40:51 IST" name="beforeMethod" finished-at="2023-01-16T12:40:53 IST" duration-ms="1635" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyTheCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCase@15eb5ee5]" started-at="2023-01-16T12:40:53 IST" name="verifyTheCountOfActiveStatus" description="verification of the active status count" finished-at="2023-01-16T12:40:54 IST" duration-ms="1450" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheCountOfActiveStatus -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageLocationTestCase@15eb5ee5]" started-at="2023-01-16T12:40:54 IST" name="afterMethod" finished-at="2023-01-16T12:40:54 IST" duration-ms="72" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTheCountOfActiveStatus status=SUCCESS method=ManageLocationTestCase.verifyTheCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCase@15eb5ee5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.ManageLocationTestCase -->
-      <class name="testCases.ManageProductTestCase">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCase@15c43bd9]" started-at="2023-01-16T12:39:39 IST" name="beforeMethod" finished-at="2023-01-16T12:39:42 IST" duration-ms="2535" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyVegIsSelectedInProductType()[pri:1, instance:testCases.ManageProductTestCase@15c43bd9]" started-at="2023-01-16T12:39:42 IST" name="verifyVegIsSelectedInProductType" description="veg radio button is selected in product type" finished-at="2023-01-16T12:39:45 IST" duration-ms="3329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyVegIsSelectedInProductType -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCase@15c43bd9]" started-at="2023-01-16T12:39:45 IST" name="afterMethod" finished-at="2023-01-16T12:39:45 IST" duration-ms="87" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyVegIsSelectedInProductType status=SUCCESS method=ManageProductTestCase.verifyVegIsSelectedInProductType()[pri:1, instance:testCases.ManageProductTestCase@15c43bd9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.ManageProductTestCase -->
-      <class name="testCases.ManageDeliveryBoyTestCase">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageDeliveryBoyTestCase@4f209819]" started-at="2023-01-16T12:40:07 IST" name="beforeMethod" finished-at="2023-01-16T12:40:08 IST" duration-ms="1632" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyToolTip()[pri:1, instance:testCases.ManageDeliveryBoyTestCase@4f209819]" started-at="2023-01-16T12:40:08 IST" name="verifyToolTip" description="tool tip test case" finished-at="2023-01-16T12:40:13 IST" duration-ms="4295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyToolTip -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageDeliveryBoyTestCase@4f209819]" started-at="2023-01-16T12:40:13 IST" name="afterMethod" finished-at="2023-01-16T12:40:29 IST" duration-ms="16260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyToolTip status=SUCCESS method=ManageDeliveryBoyTestCase.verifyToolTip()[pri:1, instance:testCases.ManageDeliveryBoyTestCase@4f209819] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageDeliveryBoyTestCase@4f209819]" started-at="2023-01-16T12:40:29 IST" name="beforeMethod" finished-at="2023-01-16T12:40:31 IST" duration-ms="1778" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyStylePropertyOfNewButton()[pri:2, instance:testCases.ManageDeliveryBoyTestCase@4f209819]" started-at="2023-01-16T12:40:31 IST" name="verifyStylePropertyOfNewButton" description="new button test case" finished-at="2023-01-16T12:40:35 IST" duration-ms="4234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyStylePropertyOfNewButton -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageDeliveryBoyTestCase@4f209819]" started-at="2023-01-16T12:40:35 IST" name="afterMethod" finished-at="2023-01-16T12:40:51 IST" duration-ms="16286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyStylePropertyOfNewButton status=SUCCESS method=ManageDeliveryBoyTestCase.verifyStylePropertyOfNewButton()[pri:2, instance:testCases.ManageDeliveryBoyTestCase@4f209819] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.ManageDeliveryBoyTestCase -->
-      <class name="testCases.ManageOrdersTestCase">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageOrdersTestCase@3d74bf60]" started-at="2023-01-16T12:39:45 IST" name="beforeMethod" finished-at="2023-01-16T12:39:47 IST" duration-ms="1994" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyTheSearchOfExistingOrder()[pri:1, instance:testCases.ManageOrdersTestCase@3d74bf60]" started-at="2023-01-16T12:39:47 IST" name="verifyTheSearchOfExistingOrder" description="search an existing order" finished-at="2023-01-16T12:39:50 IST" duration-ms="2864" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSearchOfExistingOrder -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageOrdersTestCase@3d74bf60]" started-at="2023-01-16T12:39:50 IST" name="afterMethod" finished-at="2023-01-16T12:40:07 IST" duration-ms="16263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTheSearchOfExistingOrder status=SUCCESS method=ManageOrdersTestCase.verifyTheSearchOfExistingOrder()[pri:1, instance:testCases.ManageOrdersTestCase@3d74bf60] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.ManageOrdersTestCase -->
-      <class name="testCases.PushNotificationTestCase">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestCase@39529185]" started-at="2023-01-16T12:40:57 IST" name="beforeMethod" finished-at="2023-01-16T12:40:58 IST" duration-ms="1572" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyTheAlertText()[pri:1, instance:testCases.PushNotificationTestCase@39529185]" started-at="2023-01-16T12:40:58 IST" name="verifyTheAlertText" description="verify the alert text" finished-at="2023-01-16T12:41:01 IST" duration-ms="2529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheAlertText -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestCase@39529185]" started-at="2023-01-16T12:41:01 IST" name="afterMethod" finished-at="2023-01-16T12:41:17 IST" duration-ms="16276" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTheAlertText status=SUCCESS method=PushNotificationTestCase.verifyTheAlertText()[pri:1, instance:testCases.PushNotificationTestCase@39529185] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestCase@39529185]" started-at="2023-01-16T12:41:17 IST" name="beforeMethod" finished-at="2023-01-16T12:41:19 IST" duration-ms="1727" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyTheColorOfSendButton()[pri:3, instance:testCases.PushNotificationTestCase@39529185]" started-at="2023-01-16T12:41:19 IST" name="verifyTheColorOfSendButton" description="verify the color of send button" finished-at="2023-01-16T12:41:20 IST" duration-ms="1306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheColorOfSendButton -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestCase@39529185]" started-at="2023-01-16T12:41:20 IST" name="afterMethod" finished-at="2023-01-16T12:41:20 IST" duration-ms="139" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTheColorOfSendButton status=SUCCESS method=PushNotificationTestCase.verifyTheColorOfSendButton()[pri:3, instance:testCases.PushNotificationTestCase@39529185] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.PushNotificationTestCase -->
-    </test> <!-- MyTestName -->
-  </suite> <!-- My Extent Report Suite -->
+      </class> <!-- testCases.LoginTestCase -->
+    </test> <!-- MyFirstTest -->
+  </suite> <!-- TestRunnerSuite -->
 </testng-results>

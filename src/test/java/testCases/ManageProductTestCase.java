@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import constants.Constant;
 import elementRepository.LoginPage;
 import elementRepository.ManageProductPage;
+import retryTest.RetryAnalyzer;
 
 public class ManageProductTestCase extends BaseClass {
 	
@@ -28,7 +29,7 @@ public class ManageProductTestCase extends BaseClass {
 	  Assert.assertEquals(actualDisplay,expectedDisplay,"product type is not selected");
   }
   
-  @Test(priority = 2,description = "verify image is uploaded")
+  @Test(priority = 2,description = "verify image is uploaded",retryAnalyzer =RetryAnalyzer.class )
   public void verifyImageUpload() throws InterruptedException, AWTException{
 	  lp=new LoginPage(driver);
 	  mpp=new ManageProductPage(driver);
