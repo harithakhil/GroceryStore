@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.ManageLocationTestCase">
+      <class name="testCases.LoginTestCase">
         <methods>
-          <include name="verifyTheCountOfActiveStatus"/>
+          <include name="verifyTheLoginUsingExcelRead"/>
+          <include name="verifyLoggedUser"/>
+          <include name="verifyLoggedUser"/>
           <include name="beforeMethod"/>
+          <include name="profileStyleValidation"/>
+          <include name="verifyRememberCheckBoxIsDisplayedOrNot"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testCases.ManageLocationTestCase -->
+      </class> <!-- testCases.LoginTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

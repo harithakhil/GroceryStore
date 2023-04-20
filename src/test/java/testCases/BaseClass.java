@@ -40,9 +40,7 @@ public class BaseClass {
 			testBasic();
 			//System.out.println(System.getProperty("user.dir"));
 			System.setProperty(prop.getProperty("chromeBrowserDriver"),System.getProperty("user.dir") + prop.getProperty("chromeDriverPath"));
-			ChromeOptions co=new ChromeOptions();
-			co.addArguments("--remote-allow-origins=*");
-			driver=new ChromeDriver(co);
+			driver=new ChromeDriver();
 		}
 		else if(browser.equals("firefox")) 
 		{
